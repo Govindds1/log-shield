@@ -30,7 +30,7 @@ export default function LogShield() {
     formData.append("file", uploadedFile);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/scan", {
+      const response = await fetch("https://log-shield.onrender.com", {
         method: "POST",
         body: formData,
       });
